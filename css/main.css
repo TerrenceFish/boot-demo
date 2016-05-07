@@ -1,0 +1,708 @@
+*{padding：0;margin:0;}
+/*取消水平拉条*/
+body{overflow-x:hidden;}
+.nav{
+	width:100%;
+	height:144px;
+	/*border:1px solid red;*/
+}
+.nav-left,.nav-right{
+	position: absolute;
+	width:12%;
+	height:144px;
+	background: url("images/templatemo-topbar-bg.png") repeat-x;
+}
+.nav-ul{
+	float:left;
+	list-style: none;
+	width:80%;
+	height:144px;
+	background: url("images/templatemo_logobg.png") no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	left:10%;
+	z-index: 100;
+}
+.nav-ul li{
+	float:left;
+	width:14%;
+	position: relative;
+	top:100px;
+}
+/*our teams比较宽*/
+.nav-ul .bigli{
+	width:15%;
+}
+.nav-ul li a{
+	color:white;
+	font-size: 20px;
+	font-weight: 600;
+}
+.nav-ul li a:hover{
+	text-decoration: none;
+	color:blue;
+}
+/*使li排列中间*/
+.nav-ul .menuItem{
+	left:15%;
+}
+.nav-right{left:88%;}
+.nav-h3{
+	font-size: 35px;
+	font-weight: 800;
+	color:white;
+	display: block;
+	position: absolute;
+	top:10px;
+	left:45%;
+	z-index: 200;
+}
+/*使图片高度不变*/
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  width:100%;
+  height: 562px;
+}
+/*轮播图样式*/
+.carousel{top:57px;}
+.nav-btn{
+	background-color: #F0AD4E;
+	width:100px;
+	height:30px;
+	border-radius: 10px;
+	position: absolute;
+	left:46%;
+	top:440px;
+	color:white;
+	font-size: 18px;
+	text-align: center;
+	z-index: 300;
+	outline-style: none;
+}
+.nav-btn:hover{opacity: 0.8;}
+/*轮播图内容*/
+.carousel-caption h3{
+	position: absolute;
+	top:-320px;
+	left:35%;
+}
+.carousel-caption p{
+	position: absolute;
+	top:-250px;
+}
+/*服务页面样式*/
+#Service{
+	width:100%;
+	height:auto;
+	position: absolute;
+	top:640px;
+	background-color: #F0EEEE;
+	-webkit-transform:all 0.5s ease;
+}
+/*修改大小*/
+.col-lg-3 {
+    width: 22%;
+  }
+/*统一样式通用*/
+.h-p h3{
+	width:100%;
+	text-align: center;
+}
+.h-p p{
+	width:98%;
+	text-align: center;
+	padding-left: 25px;
+	font-weight: 500;
+	font-size: 14px;
+}
+.h-p p span{color:blue;}
+.row{margin-right: 0;}
+.row .colbj{
+	background-color: white;
+	height:250px;
+	margin-bottom: 40px;
+	margin-left:35px;
+	/*margin-top: 30px;*/
+	border: 1px solid #ddd;
+    border-radius: 5px;
+}
+#Service .row img{
+	position: absolute;
+	left:45%;
+	top:25px;
+}
+#Service .row span{
+	display: block;
+	width:100%;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 800;
+	margin-top: 80px;
+}
+#Service .row p{
+	width:80%;
+	margin:0 auto;
+	text-align: center;
+	height:auto;
+}
+/*控制响应式*/
+@media screen and (min-width: 599px) and (max-width: 1168px){
+	.row .colbj{width:35%;height: 290px;left:100px;}
+}
+@media screen and (min-width: 599px) and (max-width: 967px){
+	.row .colbj{width:35%;height: 290px;left:100px;}
+}
+@media screen and (min-width: 691px) and (max-width: 967px){
+	#Projects{top:1450px;}
+	#Teams{top:2020px;}
+	#Contact{top:2523px;}
+}
+@media screen and (min-width: 986px){
+	#Projects{top:1430px;}
+	#Teams{top:2000px;}
+	#Contact{top:2503px;}
+}
+@media screen and (min-width: 1169px){
+	#Projects{top:1060px;}
+	#Teams{top:1630px;}
+	#Contact{top:2135px;}
+}
+@media screen and (min-width: 1326px){
+	#Projects{top:1040px;}
+	#Teams{top:1610px;}
+	#Contact{top:2115px;}
+	/*.slideleft{left:200px;}
+	.slideright{left:1000px;}*/
+}
+@media screen and (max-width: 598px){
+	.row .colbj{width:50%;height: 280px;left:120px;}
+	#Teams .picwrap{
+		width:181px;
+		left:120px;
+	}
+	#Teams .luctus{
+		width:181px;
+		left:120px;
+	}
+	#Teams .ceo{
+		width:181px;
+		left:120px;
+	}
+	#Teams .slideright{
+		left:320px;
+	}
+	#Teams .slideleft{
+		left:50px;
+	}
+	.nav-h3{left:35%;}
+	.carousel-caption h3{left:42px;}
+	.nav-btn{left:240px;}
+	/*#Projects{top:1600px;}*/
+}
+/*控制点击图的响应式*/
+@media screen and (min-width: 1286px){
+	#Teams .picwrap{
+		width:721px;
+		left:300px;
+	}
+	#Teams .luctus{
+		width:721px;
+		left:300px;
+	}
+	#Teams .ceo{
+		width:721px;
+		left:300px;
+	}
+	#Teams .slideleft{
+		left:100px;
+	}
+	#Teams .slideright{left:1180px;}
+}
+@media screen and (min-width: 992px) and (max-width: 1285px){
+	#Teams .picwrap{
+		width:541px;
+		left:290px;
+	}
+	#Teams .luctus{
+		width:541px;
+		left:290px;
+	}
+	#Teams .ceo{
+		width:541px;
+		left:290px;
+	}
+	#Teams .slideright{
+		left:900px;
+	}
+	#Teams .slideleft{
+		left:165px;
+	}
+}
+@media screen and (min-width: 848px) and (max-width: 991px){
+	#Teams .picwrap{
+		width:361px;
+		left:290px;
+	}
+	#Teams .luctus{
+		width:361px;
+		left:290px;
+	}
+	#Teams .ceo{
+		width:361px;
+		left:290px;
+	}
+	#Teams .slideright{
+		left:730px;
+	}
+	#Teams .slideleft{
+		left:165px;
+	}
+}
+/*@media screen (min-width: 599px)and (max-width: 848px){
+    #Teams .picwrap{
+		width:181px;
+		left:280px;
+	}
+	#Teams .luctus{
+		width:181px;
+		left:280px;
+	}
+	#Teams .ceo{
+		width:181px;
+		left:280px;
+	}
+	#Teams .slideright{
+		left:510px;
+	}
+	#Teams .slideleft{
+		left:150px;
+	}
+}*/
+@media screen and (min-width: 599px) and (max-width: 690px){
+    #Projects{top:1470px;height:825px;}
+	#Teams{top:2040px;}
+	#Contact{top:2545px;}
+	.row .colbj{width:35%;height: 280px;left:80px;} 
+	.nav-ul{width:80%;}
+}
+/*控制小屏幕出现home图标*/
+@media screen and (max-width: 599px){
+	/*#Projects{top:2130px;}*/
+	/*#Teams{top:2710px;}
+	#Contact{top:3215px;}*/
+	.nav-ul{width:80%;}
+	.homeicon span{left:-15px;}
+	.homeicon-ul {margin-left:-70px;}
+}
+@media screen and (min-width: 599px){
+	.nav-ul{width:80%;}
+	.homeicon span{left:-15px;}
+	.homeicon-ul {margin-left:-50px;}
+}
+/*项目开始*/
+#Projects{
+	width:100%;
+	/*height:566px;*/
+	/*border:1px solid red;*/
+	position: absolute;
+	/*top:1090px;*/
+	background-color: #F0EEEE;
+}
+#Projects .wrap{
+	margin-bottom: 40px;
+    width:100%;
+    height:420px;
+}
+#div1,#div2,#div3,#div4,#div5,#div6,#div7,#div8{
+		/*width:25%;*/
+		height:200px;
+		position: relative;
+		float:left;
+		top:20px;
+		overflow: hidden;
+	}
+#Projects .img img{
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+#Projects .wrap .divbj{
+	width:100%;
+	height:100%;
+	top:0px;
+	/*z-index: 1000;*/
+	position: absolute;
+	background-color: #E46142;
+	display: none;
+}
+#Projects .wrap .divbj .h-p{
+	margin-top: 40px;
+}
+/*#Projects .wrap .divbj .span1{
+	width:32px;
+	height:32px;
+	background: url("images/Magnifie.png") no-repeat;
+	display: block;
+	left:35%;
+	position: absolute;
+	top:120px;
+}*/
+.zoom{
+   	display: block;
+   	background: url("images/Magnifie.png") no-repeat;
+   	width:32px;
+   	height:32px;
+   	position: absolute;
+    top:120px;
+    left:30%;
+   }
+#Projects .wrap .divbj .span2{
+	width:32px;
+	height:32px;
+	background: url("images/bookmark.png") no-repeat;
+	display: block;
+	left:50%;
+	position: absolute;
+	top:120px;
+}
+#div1:hover .divbj,#div2:hover .divbj,#div3:hover .divbj,#div4:hover .divbj,#div5:hover .divbj,#div6:hover .divbj,#div7:hover .divbj,#div8:hover .divbj{
+   display: block;
+   opacity: 0.8;
+}
+#div1:hover img,#div2:hover img,#div3:hover img,#div4:hover img,#div5:hover img,#div6:hover img,#div7:hover img,#div8:hover img{
+   -webkit-transform:scale(1.5);
+   -moz-transform:scale(1.5);
+   -ms-transform:scale(1.5);
+   transform:scale(1.5);
+   -webkit-transition:all 1.5s ease;
+   -moz-transition:all 1.5s ease;
+   -ms-transition:all 1.5s ease;
+   transition:all 1.5s ease;
+}
+/*our team样式*/
+#Teams{
+	width:100%;
+	height:500px;
+	/*border:1px solid red;*/
+	position: absolute;
+	/*top:1660px;*/
+	background-color: #F0EEEE;
+}
+#Teams .slideleft,#Teams .slideright{
+      width:100px;
+      height:80px;
+      position: absolute;
+      top:250px;
+}
+#Teams .slideleft{
+	background: url("images/slideitmoo_back.png") no-repeat;
+	/*left:100px;*/
+}
+#Teams .slideright{
+	background: url("images/slideitmoo_forward.png") no-repeat;
+	right:100px;
+}
+#Teams .picwrap{
+	/*width:721px;*/
+	border:1px solid #ddd;
+	border-radius: 4px;
+	height:180px;
+	line-height: 180px;
+	position: absolute;
+	/*left:270px;*/
+	top:180px;
+	overflow: hidden;
+}
+#Teams .picwrap>ul{
+    width: 2500px;
+    height: 170px;
+    line-height: 170px;
+    list-style: none;
+    /*border:1px solid blue;*/
+    position: relative;
+    padding: 0;
+    margin-left:-180px;
+}
+#Teams .picwrap>ul li{
+	padding: 0;
+	margin:0;
+	height:100%;
+	float:left;
+}
+/*轮播图下面的文字与图标*/
+#Teams .luctus{
+	/*width:721px;*/
+	height:180px;
+	line-height: 180px;
+	position: absolute;
+	/*left:270px;*/
+	top:360px;
+	overflow: hidden;
+}
+#Teams .luctus>ul{
+	width: 2500px;
+    height: 170px;
+    line-height: 170px;
+    list-style: none;
+    position: relative;
+    padding: 0;
+    top:5px;
+    margin-left: -180px;
+}
+#Teams .luctus>ul li{
+	float:left;
+	padding: 0;
+	margin: 0;
+	width:180px;
+}
+.ul-li-h3{
+	font-size: 18px;
+	color:#e97a4e;
+}
+#Teams .ceo{
+	/*width:721px;*/
+	height:180px;
+	line-height: 180px;
+	position: absolute;
+	/*left:270px;*/
+	top:360px;
+	overflow: hidden;
+}
+#Teams .ceo>ul{
+	width: 2500px;
+    height: 170px;
+    line-height: 170px;
+    list-style: none;
+    position: relative;
+    padding: 0;
+    top:50px;
+}
+#Teams .ceo>ul>li{
+	padding: 0;
+	margin:0;
+	width:180px;
+	height:100%;
+	float:left;
+	text-align: center;
+	/*border:1px solid red;*/
+	text-align: center;
+}
+.ul-li-h3{
+	color:#e97a4e;
+	font-size: 18px;
+	width:100%;
+	text-align: center;
+}
+.ul-li-h4{
+	font-size: 16px;
+	font-weight: bold;
+}
+.ul-li-ul{
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    list-style: none;
+    position: relative;
+    padding: 0;
+    margin-left:-150px;	
+}
+.ul-li-ul li{
+	float: left;
+	width:30px;
+}
+/*联系方式*/
+#Contact{
+	width:100%;
+	height:350px;
+	/*border:1px solid red;*/
+	position: absolute;
+	/*top:2180px;*/
+	background-color: #F0EEEE;
+}
+#Contact label{
+	display: block;
+	text-align: right;
+	font-size: 18px;
+	color: #b1abb1;
+}
+#Contact .ipt{
+	width:100%;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 12px;
+}
+.btn{
+	margin-left:40%;
+	margin-top: 20px;
+}
+@media screen and (max-width: 990px){
+	#Contact .row label{
+		float: left;
+	}
+}
+/*屏幕放小时的导航栏样式*/
+.homeicon{
+	width:80px;
+	height:200px;
+	left:88%;
+	top:20px;
+	position:fixed;
+	z-index: 10000;
+	
+}
+.homeicon span{
+	width:100%;
+	height:22px;
+	list-style: none;
+	/*border:1px solid black;*/
+	display: none;
+	position: absolute;
+	background: url("images/icon_home.png") top no-repeat;
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-ms-transition:0.5s all;
+	-o-transition:0.5s all;
+}
+.homeicon-ul{
+	width:150px;
+	height:200px;
+	list-style: none;
+	margin-top:30px;
+	display: none;
+	transition:0.5 all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-ms-transition:0.5s all;
+	-o-transition:0.5s all;
+}
+.homeicon-ul li{
+	width:100%;
+	margin-top:20px;
+}
+.homeicon-ul li a{
+	display: block;
+	width:100%;
+	/*color: white;*/
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+}
+@media screen and (max-width: 1010px){
+      .homeicon span{display: block;}
+      #nav-ul-li1,#nav-ul-li2,#nav-ul-li3,#nav-ul-li4,#nav-ul-li5{display: none;}
+}
+@media screen and (min-width: 1011px){
+	.homeicon-ul {display: none;}
+}
+/*控制图片大小project的响应式*/
+@media screen and (min-width: 987px){
+	.img{width:25%;}
+	#Projects{height:566px;}
+}
+@media screen and (min-width: 500px) and (max-width: 986px){
+	#Projects{height:966px;/*top:1430px;*/}
+	.wrap{width:100%;}
+	.img{width:50%;}
+}
+/*控制高度*/
+@media screen and (min-width: 906px) and (max-width: 986px){
+	#Projects{top:1430px;}
+	#Teams{top:2400px;}
+	#Contact{top:2904px;height:490px;}
+}
+@media screen and (min-width: 600px) and (max-width: 905px){
+	#Projects{top:1450px;}
+	#Teams{top:2420px;}
+	#Contact{top:2924px;height:490px;}
+	 /*#Teams .picwrap{
+		width:181px;
+		left:280px;
+	}
+	#Teams .luctus{
+		width:181px;
+		left:280px;
+	}
+	#Teams .ceo{
+		width:181px;
+		left:280px;
+	}
+	#Teams .slideright{
+		left:510px;
+	}
+	#Teams .slideleft{
+		left:150px;
+	}*/
+}
+@media screen and (max-width: 599px){
+	#Projects{top:2090px;height:1786px;}
+	.img{width:100%;}
+	#Teams{top:3880px;}
+	#Contact{top:4384px;height:520px;}
+}
+/*控制点击轮播图*/
+@media screen and (min-width: 688px) and (max-width: 847px){
+	 #Teams .picwrap{
+		width:181px;
+		left:280px;
+	}
+	#Teams .luctus{
+		width:181px;
+		left:280px;
+	}
+	#Teams .ceo{
+		width:181px;
+		left:280px;
+	}
+	#Teams .slideright{
+		left:550px;
+	}
+	#Teams .slideleft{
+		left:150px;
+	}
+}
+@media screen and (max-width: 688px){
+	#Teams .picwrap{
+		width:181px;
+		left:200px;
+	}
+	#Teams .luctus{
+		width:181px;
+		left:200px;
+	}
+	#Teams .ceo{
+		width:181px;
+		left:200px;
+	}
+	#Teams .slideright{
+		left:450px;
+	}
+	#Teams .slideleft{
+		left:100px;
+	}
+}
+/*返回顶部*/
+.backtop{
+	width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid #03548F;
+    position: fixed;
+    bottom:30px;
+    right:20px;
+    z-index: 1000;
+    display: none;
+}
+.backtop span{
+	display: block;
+	width:100px;
+	height:auto;
+	text-align: center;
+	position: absolute;
+	left:-54px;
+	top:30px;
+	color:#03548F;
+}

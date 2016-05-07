@@ -1,0 +1,74 @@
+<html>
+<head>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<style>
+.wrap{
+width:204px;
+height:30px;
+line-height: 30px;
+overflow:hidden;
+/*border:1px solid blue;*/
+margin:80px 0 0 200px;/*上右下左*/
+position: absolute;
+}
+.wrap>ul {
+width:612px;
+height:30px;
+left: -141px;
+top:-16px;
+list-style:none;
+position: relative;/*position 一定是relative,否则没有效果*/
+}
+li{
+float:left;
+width:100px;
+height:30px;
+line-height:30px;
+background-color:orange;
+text-align:center;
+border-left:1px solid red;
+}
+.left,.right{
+	top: 85px;
+	display: block;
+	height:30px;
+	line-height: 30px;
+	position: absolute;
+  text-decoration: none;
+}
+.left{margin-left: 140px;}
+.right{margin-left: 430px;}
+</style>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".left").click(function(){
+     var li=$(".wrap>ul");
+     li.animate({left:"-=100px"},1000,function(){
+     	li.css({left:"-141px"}).find("li:first").appendTo(li);
+     });
+  });
+  /*如果只有1，2，3三个li的话，就会出现动画空白之后填充，所以3的li的开始*/
+  $(".right").click(function(){
+      var li=$(".wrap>ul");
+     li.animate({left:"+=100px"},1000,function(){
+     	li.css({left:"-141px"}).find("li:last").prependTo(li);
+     });
+  });
+});
+</script>
+</head>
+<body>
+<div class="wrap">
+<ul>
+<li>3</li>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>1</li>
+<li>2</li>
+</ul>
+</div>
+<a class="left" href="#">left</a>
+<a class="right" href="#">right</a>
+</body>
+</html>
